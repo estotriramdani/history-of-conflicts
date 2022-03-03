@@ -4,7 +4,8 @@ import startEndIndexFinder from '../../../utils/startEndIndexFinder';
 
 export default (req: NextApiRequest, res: NextApiResponse) => {
   const querySection = req.query.section || '1';
-  const itemsPerSection = 10;
+  const itemsPerSection =
+    +req.query.itemsPerSection || transformedData.length + 1;
   const { endIndex, section, startIndex } = startEndIndexFinder({
     querySection,
     itemsPerSection,
@@ -25,7 +26,7 @@ export default (req: NextApiRequest, res: NextApiResponse) => {
       if (index >= startIndex && index <= endIndex) {
         return {
           id: index + 1,
-          name: 'Part 1',
+          name: `Part ${index + 1}`,
           from: item[0].Date,
           to: item[item.length - 1].Date,
           link: `/api/parts/${index + 1}`,
