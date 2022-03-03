@@ -1,0 +1,76 @@
+{
+  "status": true,
+  "message": "List of parts was successfully fetched",
+  "data": [
+    {
+      "id": 1,
+      "name": "Part 1",
+      "from": "1928",
+      "to": "1945",
+      "link": "/api/parts/1"
+    },
+    {
+      "id": 2,
+      "name": "Part 2",
+      "from": "1928",
+      "to": "1945",
+      "link": "/api/parts/2"
+    },
+    {
+      "id": 3,
+      "name": "Part 3",
+      "from": "1928",
+      "to": "1945",
+      "link": "/api/parts/3"
+    },
+    {
+      "id": 4,
+      "name": "Part 4",
+      "from": "1928",
+      "to": "1945",
+      "link": "/api/parts/4"
+    },
+    {
+      "id": 5,
+      "name": "Part 5",
+      "from": "1928",
+      "to": "1945",
+      "link": "/api/parts/5"
+    },
+    {
+      "id": 6,
+      "name": "Part 6",
+      "from": "1928",
+      "to": "1945",
+      "link": "/api/parts/6"
+    },
+    {
+      "id": 7,
+      "name": "Part 7",
+      "from": "1928",
+      "to": "1945",
+      "link": "/api/parts/7"
+    },
+    {
+      "id": 8,
+      "name": "Part 8",
+      "from": "1928",
+      "to": "1945",
+      "link": "/api/parts/8"
+    },
+    {
+      "id": 9,
+      "name": "Part 9",
+      "from": "1928",
+      "to": "1945",
+      "link": "/api/parts/9"
+    },
+    {
+      "id": 10,
+      "name": "Part 10",
+      "from": "1928",
+      "to": "1945",
+      "link": "/api/parts/10"
+    }
+  ]
+}
