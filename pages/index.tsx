@@ -6,7 +6,7 @@ import ButtonSquare from '../components/ButtonSquare';
 import HeaderHome from '../components/HeaderHome';
 import Parts from '../components/Parts';
 import PartsPagination from '../components/PartsPagination';
-import Layout from '../components/Layout';
+import Layout from '../components/containers/Layout';
 
 export default function Home() {
   const [section, setSection] = useState(1);
@@ -14,7 +14,7 @@ export default function Home() {
   const { data } = useSWR<ResponseAPISections>(URL, fetcher);
   return (
     <Layout>
-      <main className="flex min-h-screen flex-col p-3">
+      <main className="flex min-h-screen flex-col">
         <HeaderHome />
         <Parts data={data} />
         <PartsPagination

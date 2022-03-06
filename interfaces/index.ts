@@ -24,14 +24,16 @@ export interface ResponseAPISectionsData {
 export interface ResponseAPISections extends ResponseAPI {
   data: ResponseAPISectionsData;
 }
+
+export interface PartItem {
+  Date: number | string;
+  Headline: string;
+  'Conflict Type': string;
+  Country: string;
+  Region: string;
+  Description: string;
+  Sources: string;
+}
 export interface ResponseAPIPart extends ResponseAPI {
-  data: {
-    Date: number | string;
-    Headline: string;
-    'Conflict Type': string;
-    Country: string;
-    Region: string;
-    Description: string;
-    Sources: string;
-  }[];
+  data: PartItem[];
 }

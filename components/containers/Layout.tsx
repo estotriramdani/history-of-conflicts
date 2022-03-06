@@ -9,7 +9,7 @@ export default function Layout(props: Props) {
       <Head>
         <title>History of Conflicts</title>
       </Head>
-      <div className="min-h-screen bg-gradient-to-r from-violet-900 to-violet-800 font-mono text-white">
+      <div className="min-h-screen bg-gradient-to-r from-violet-900 to-violet-800 p-3 font-mono text-white">
         {props.children}
       </div>
     </>
